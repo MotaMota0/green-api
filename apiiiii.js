@@ -47,7 +47,7 @@ async function sendMessage() {
         const response = await fetch(`${apiUrl}/waInstance${idInstance}/sendMessage/${apiToken}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ chatId: "87789265651@c.us", message: message })
+            body: JSON.stringify({ chatId: "77789265651@c.us", message: message })
         });
         const data = await response.json();
         showResponse(JSON.stringify(data, null, 2));
