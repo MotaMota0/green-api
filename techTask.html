@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="apiiiii.js"></script>
-    <title>Пример страницы</title>
+    <title>Green API</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,12 +29,16 @@
         button:hover {
             background-color: #45a049;
         }
+        #response {
+            resize: none;
+            background-color: #f9f9f9;
+        }
     </style>
 </head>
 <body>
     <input type="text" id="idInstance" placeholder="idInstance">
     <input type="text" id="apiTokenInstance" placeholder="apiTokenInstance">
-    <textarea id="message" placeholder='{"message": "Hello from Green-API"}'></textarea>
+    <textarea id="message" placeholder="Введите сообщение"></textarea>
     <input type="text" id="fileUrl" placeholder="https://example.com/file.png">
     <button onclick="getSettings()">getSettings</button>
     <button onclick="getStateInstance()">getStateInstance</button>
